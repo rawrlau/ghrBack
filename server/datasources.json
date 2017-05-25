@@ -1,0 +1,8 @@
+{
+  "memoria": {
+    "name": "memoria",
+    "localStorage": "ghrStorage",
+    "file": "",
+    "connector": "memory"
+  }
+}

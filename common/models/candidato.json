@@ -1,0 +1,62 @@
+{
+  "name": "candidato",
+  "plural": "candidatos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "apellido": {
+      "type": "string",
+      "required": true
+    },
+    "perfil": {
+      "type": "string"
+    },
+    "provincia": {
+      "type": "string"
+    },
+    "posicion": {
+      "type": "string"
+    },
+    "experiencia": {
+      "type": "string"
+    },
+    "disp_viajar": {
+      "type": "string"
+    },
+    "disp_residencia": {
+      "type": "string"
+    },
+    "disp_incorporacion": {
+      "type": "string"
+    },
+    "expect_contractual": {
+      "type": "string"
+    },
+    "feedback_sourcing": {
+      "type": "string"
+    },
+    "feedback_tecnico": {
+      "type": "string"
+    },
+    "tec_seleccion": {
+      "type": "string"
+    },
+    "referenciado": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}

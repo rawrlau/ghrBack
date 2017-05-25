@@ -1,0 +1,28 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "candidato": {
+    "dataSource": "memoria",
+    "public": true
+  },
+  "solicitud": {
+    "dataSource": "memoria",
+    "public": true
+  },
+  "tecnologia": {
+    "dataSource": "memoria",
+    "public": true
+  }
+}

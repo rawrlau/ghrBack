@@ -1,0 +1,58 @@
+{
+  "name": "solicitud",
+  "plural": "solicitudes",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "descripcion": {
+      "type": "string"
+    },
+    "cliente": {
+      "type": "string",
+      "required": true
+    },
+    "brm": {
+      "type": "string"
+    },
+    "adm": {
+      "type": "string",
+      "default": "perfil"
+    },
+    "perfil": {
+      "type": "string",
+      "required": true
+    },
+    "reqObligatorios": {
+      "type": "string"
+    },
+    "reqDeseables": {
+      "type": "string"
+    },
+    "viajar": {
+      "type": "string"
+    },
+    "guardias": {
+      "type": "string"
+    },
+    "ingles": {
+      "type": "string"
+    },
+    "consultorasContactadas": {
+      "type": "string"
+    },
+    "estado": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
