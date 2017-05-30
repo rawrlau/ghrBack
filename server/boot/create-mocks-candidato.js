@@ -9,7 +9,7 @@ module.exports = function(app) {
     return Math.floor(Math.random() * (max - min) + min);
   }
 
-        // Arrays
+  // Arrays
   var nombre = ['Hector', 'Adrián', 'Dani', 'Miguel', 'Alex', 'Rodrigo', 'Marta', 'Alejandro', 'Alvaro', 'Luis'];
   var apellido = ['Martín', 'Alonso', 'Tizón', 'Espinoza', 'Monzón', 'Minguez', 'Moreno', 'Ortiz', 'Fernández'];
   var perfil = ['Analista', 'Programador', 'Diseñador'];
