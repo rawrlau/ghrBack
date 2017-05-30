@@ -1,0 +1,28 @@
+{
+  "name": "contacto",
+  "plural": "contactos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "id": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "valor": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
