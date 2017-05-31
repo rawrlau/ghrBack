@@ -50,7 +50,7 @@ module.exports = function(app) {
   function generadorContactos(amount) {
     var array = [];
     for (var i = 0; i < amount; i++) {
-      for (var j = 0; j < linearGenerator(1, 3); j++) {
+      for (var j = 0; j < linearGenerator(1, 4); j++) {
         array.push(contactoAleatorio(i + 1));
       }
     }
