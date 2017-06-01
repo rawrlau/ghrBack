@@ -29,12 +29,6 @@
       "type": "string",
       "required": true
     },
-    "reqObligatorios": {
-      "type": "string"
-    },
-    "reqDeseables": {
-      "type": "string"
-    },
     "viajar": {
       "type": "string"
     },

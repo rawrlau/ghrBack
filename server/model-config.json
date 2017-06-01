@@ -28,5 +28,17 @@
   "contacto": {
     "dataSource": "memoria",
     "public": true
+  },
+  "caracteristica": {
+    "dataSource": "memoria",
+    "public": true
+  },
+  "requisito": {
+    "dataSource": "memoria",
+    "public": true
+  },
+  "listaDeRequisito": {
+    "dataSource": "memoria",
+    "public": true
   }
 }

@@ -1,0 +1,20 @@
+{
+  "name": "listaDeRequisito",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {},
+  "validations": [],
+  "relations": {
+    "requisitos": {
+      "type": "hasMany",
+      "model": "requisito",
+      "foreignKey": "",
+      "through": "requisito"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

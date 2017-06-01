@@ -1,0 +1,30 @@
+{
+  "name": "requisito",
+  "plural": "requisitos",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nivel": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {
+    "caracteristica": {
+      "type": "belongsTo",
+      "model": "caracteristica",
+      "foreignKey": ""
+    },
+    "listaDeRequisito": {
+      "type": "belongsTo",
+      "model": "listaDeRequisito",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,0 +1,22 @@
+{
+  "name": "caracteristica",
+  "plural": "caracteristicas",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
