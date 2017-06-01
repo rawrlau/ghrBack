@@ -1,6 +1,27 @@
 'use strict';
 
 module.exports = function(app) {
+  const Caracteristica = app.models.Caracteristica;
+  [
+    {
+      nombre: 'javaScript',
+      tipo: 'programacion',
+    },
+    {
+      nombre: 'java',
+      tipo: 'programacion',
+    },
+    {
+      nombre: 'ingles',
+      tipo: 'idioma',
+    },
+    {
+      nombre: 'guardias',
+      tipo: 'disponibilidad',
+    },
+  ].map(function(elem) {
+    Caracteristica.create(elem);
+  });
   const Tecnologia = app.models.Tecnologia;
   const CANDIDATO_MOCK_AMOUNT = 103;
   console.log('app.models', app.models);

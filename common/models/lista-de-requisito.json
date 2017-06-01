@@ -11,8 +11,7 @@
     "requisitos": {
       "type": "hasMany",
       "model": "requisito",
-      "foreignKey": "",
-      "through": "requisito"
+      "foreignKey": ""
     }
   },
   "acls": [],

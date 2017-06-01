@@ -43,10 +43,29 @@
     },
     "estado": {
       "type": "string"
+    },
+    "fechaCierre": {
+      "type": "string"
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "reqObligatorios": {
+      "type": "belongsTo",
+      "model": "listaDeRequisito",
+      "foreignKey": "idReqObligatorios"
+    },
+    "reqDeseables": {
+      "type": "belongsTo",
+      "model": "listaDeRequisito",
+      "foreignKey": "idReqDeseables"
+    },
+    "candidato": {
+      "type": "belongsTo",
+      "model": "candidato",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
