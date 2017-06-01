@@ -52,6 +52,7 @@ module.exports = function(app) {
       estado: estado[linearGenerator(0, estado.length)],
       fecha_contacto: new Date(new Date().getTime() - linearGenerator(0, 999999999999)),
       fecha_actualizado: new Date(new Date().getTime() - linearGenerator(0, 999999999999)),
+      listaDeRequisitoId: linearGenerator(0, 200),
     };
     return candidato;
   }
