@@ -57,6 +57,11 @@
   },
   "validations": [],
   "relations": {
+    "listaDeRequisito": {
+      "type": "belongsTo",
+      "model": "listaDeRequisito",
+      "foreignKey": ""
+    }
   },
   "acls": [],
   "methods": {}
