@@ -25,19 +25,6 @@
       "type": "string",
       "default": "perfil"
     },
-    "perfil": {
-      "type": "string",
-      "required": true
-    },
-    "viajar": {
-      "type": "string"
-    },
-    "guardias": {
-      "type": "string"
-    },
-    "ingles": {
-      "type": "string"
-    },
     "consultorasContactadas": {
       "type": "string"
     },

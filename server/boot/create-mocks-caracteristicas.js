@@ -1,5 +1,4 @@
 'use strict';
-
 module.exports = function(app) {
   const Caracteristica = app.models.Caracteristica;
   [
