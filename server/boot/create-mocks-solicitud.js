@@ -10,12 +10,8 @@ module.exports = function(app) {
   var cliente = ['BBVA', 'El Corte Ingles', 'Clientazo'];
   var brm = ['arm1', 'arm2', 'arm3', 'arm4', 'arm5', 'arm6'];
   var adm = ['adm1', 'adm2', 'adm3', 'adm4', 'adm5', 'adm6'];
-  var perfil = ['programador', 'Senior Java', 'Analista', 'Senior JavaScript', 'Experto en C'];
   var reqObligatorios = ['Conocimientos de java', 'Puntualidad', 'Responsabilidad'];
   var reqDeseables = ['Deseable1', 'Deseable2', 'Deseable3', 'Deseable4', 'Deseable5'];
-  var viajar = ['S', 'N'];
-  var guardias = ['S', 'N'];
-  var ingles = ['Bajo', 'Medio', 'Alto'];
   var consultorasContactadas = ['Consultora1', 'Consultora2', 'Consultora3', 'Consultora4', 'Consultora5'];
   var estado = ['abierta', 'cerradaCliente', 'cerradaIncorporacion', 'standby'];
 
@@ -32,10 +28,6 @@ module.exports = function(app) {
       adm: obtenerValor(adm),
       reqObligatorios: obtenerValor(reqObligatorios),
       reqDeseables: obtenerValor(reqDeseables),
-      perfil: obtenerValor(perfil),
-      ingles: obtenerValor(ingles),
-      viajar: obtenerValor(viajar),
-      guardias: obtenerValor(guardias),
       consultorasContactadas: obtenerValor(consultorasContactadas),
       estado: obtenerValor(estado),
     };
