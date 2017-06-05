@@ -36,8 +36,8 @@ module.exports = function(app) {
       estado: obtenerValor(estado),
       fechaCierre: new Date(obtenerFecha()),
       candidatoId: linearGenerator(0, 400),
-      idReqObligatorios: linearGenerator(0, 200),
-      idReqDeseables: linearGenerator(0, 200),
+      idReqObligatorios: linearGenerator(0, 80),
+      idReqDeseables: linearGenerator(0, 80),
     };
     return solicitud;
   }

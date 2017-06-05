@@ -18,7 +18,7 @@ module.exports = function(app) {
       nivel: linearGenerator(0, 11),
       id: id,
       caracteristicaId: linearGenerator(0, 13),
-      listaDeRequisitoId: linearGenerator(0, 400),
+      listaDeRequisitoId: linearGenerator(0, 80),
     };
     return requisito;
   }
