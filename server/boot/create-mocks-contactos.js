@@ -51,7 +51,7 @@ module.exports = function(app) {
     var array = [];
     for (var i = 0; i < amount; i++) {
       for (var j = 0; j < linearGenerator(1, 4); j++) {
-        array.push(contactoAleatorio(i + 1));
+        array.push(contactoAleatorio(i));
       }
     }
     return array;
