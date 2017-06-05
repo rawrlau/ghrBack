@@ -2,7 +2,7 @@
 
 module.exports = function(app) {
   const ListaDeRequisito = app.models.listaDeRequisito;
-  const LISTAREQUISITO_MOCK_AMOUNT = 400;
+  const LISTAREQUISITO_MOCK_AMOUNT = 80;
   console.log('app.models', app.models);
 
   /**
