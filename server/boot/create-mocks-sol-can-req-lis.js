@@ -10,30 +10,6 @@ function distribucionLineal(rango) {
   return Math.floor(Math.random() * rango);
 }
 
-// Devuelve true si encuentra un elemento dentro de array
-function elemInArray(elem, array) {
-  for (var i = 0; i < array.length; i++)
-    if (elem == array[i])
-      return true;
-  return false;
-}
-
-var arrayCaracteristicas = [];
-
-function generarCaracteristicaUnica() {
-  var caracteristica;
-  do {
-    caracteristica = linearGenerator(0, 12);
-  }
-  while (elemInArray(caracteristica, arrayCaracteristicas));
-  arrayCaracteristicas.push(caracteristica);
-  return caracteristica;
-}
-
-function resetVariable() {
-  arrayCaracteristicas = [];
-}
-
 // Rellenamos el array con nuestro valor aleatorio
 function obtenerValor(array) {
   return array[distribucionLineal(array.length)];
@@ -44,13 +20,6 @@ function generadorEntidad(amount, generatorObject) {
   var array = [];
   for (var i = 0; i < amount; i++)
     array.push(generatorObject(i + 1));
-  return array;
-}
-// Devuelve un array con todas las entidades generadas
-function generadorEntidadRequisito(amount, generatorObject, idList) {
-  var array = [];
-  for (var i = 0; i < amount; i++)
-    array.push(generatorObject(idList));
   return array;
 }
 
@@ -90,6 +59,7 @@ module.exports = function(app) {
 
   const CANDIDATO_MOCK_AMOUNT = 400;
   const SOLICITUD_MOCK_AMOUNT = 100;
+  const REQUISITO_MOCK_AMOUNT = 400;
   const LISTAREQUISITO_MOCK_AMOUNT = SOLICITUD_MOCK_AMOUNT;
 
   // Devuelve un objeto requisito
@@ -97,23 +67,28 @@ module.exports = function(app) {
     var listaRequisito = {
       id: id,
     };
-
-    generadorEntidadRequisito(linearGenerator(1, 4), objectoRequisito, id).forEach(function(elem) {
-      delete elem.id;
-      Requisito.create(elem);
-    });
-
-    resetVariable();
     return listaRequisito;
+  }
+
+  var ultimoNivelAsignado = 0;
+  var ultimaCaracteristicaAsignada = 0;
+
+  function generarNivel() {
+    ultimoNivelAsignado++;
+    if (ultimoNivelAsignado > 10) {
+      ultimoNivelAsignado = 1;
+      ultimaCaracteristicaAsignada++;
+    }
+    return ultimoNivelAsignado;
   }
 
   // Devuelve un objeto listaRequisito
   function objectoRequisito(id) {
     var requisito = {
-      nivel: linearGenerator(0, 10),
+      nivel: generarNivel(),
       id: id,
-      caracteristicaId: generarCaracteristicaUnica(),
-      listaDeRequisitoId: id,
+      caracteristicaId: ultimaCaracteristicaAsignada,
+      listaDeRequisitoId: linearGenerator(0, LISTAREQUISITO_MOCK_AMOUNT),
     };
     return requisito;
   }
@@ -171,6 +146,11 @@ module.exports = function(app) {
   generadorEntidad(LISTAREQUISITO_MOCK_AMOUNT, objectoListaRequisitos).forEach(function(elem) {
     delete elem.id;
     ListaDeRequisito.create(elem);
+  });
+
+  generadorEntidad(REQUISITO_MOCK_AMOUNT, objectoRequisito).forEach(function(elem) {
+    delete elem.id;
+    Requisito.create(elem);
   });
 
   generadorEntidad(SOLICITUD_MOCK_AMOUNT, objectoSolicitud).forEach(function(elem) {
