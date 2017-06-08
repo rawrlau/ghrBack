@@ -71,7 +71,7 @@ module.exports = function(app) {
   }
 
   var ultimoNivelAsignado = 0;
-  var ultimaCaracteristicaAsignada = 0;
+  var ultimaCaracteristicaAsignada = 1;
 
   function generarNivel() {
     ultimoNivelAsignado++;
