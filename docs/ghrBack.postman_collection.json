@@ -1,0 +1,320 @@
+{
+	"variables": [],
+	"info": {
+		"name": "ghrBack",
+		"_postman_id": "6981305b-371a-2fcc-6283-db505572bc15",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Candidatos",
+			"description": "",
+			"item": [
+				{
+					"name": "Candidato con Contacto",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/candidatos/1?filter={\"include\": \"contactos\"}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"candidatos",
+								"1"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": \"contactos\"}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Candidato",
+					"request": {
+						"url": "http://localhost:3003/api/candidatos/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Candidatos con Contacto",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/candidatos/?filter={\"include\": \"contactos\"}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"candidatos",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": \"contactos\"}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Candidato con Contactos y Requisitos con caracteristica",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/candidatos/1?filter={\"include\": [\"contactos\", {\"listaDeRequisito\": {\"requisitos\":\"caracteristica\"}}]}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"candidatos",
+								"1"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": [\"contactos\", {\"listaDeRequisito\": {\"requisitos\":\"caracteristica\"}}]}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Candidatos con Contactos y Requisitos con Caracteristica",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/candidatos/?filter={\"include\": [\"contactos\", {\"listaDeRequisito\": {\"requisitos\":\"caracteristica\"}}]}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"candidatos",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": [\"contactos\", {\"listaDeRequisito\": {\"requisitos\":\"caracteristica\"}}]}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Candidatos con Contacto campos implicitos",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/candidatos/?filter={\"include\": \"contactos\",\"fields\":{\"id\": \"true\", \"nombre\": \"true\", \"apellido\":\"true\", \"perfil\":\"true\", \"posicion\":\"true\"}}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"candidatos",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": \"contactos\",\"fields\":{\"id\": \"true\", \"nombre\": \"true\", \"apellido\":\"true\", \"perfil\":\"true\", \"posicion\":\"true\"}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Solicitudes",
+			"description": "",
+			"item": [
+				{
+					"name": "Solicitud",
+					"request": {
+						"url": "http://localhost:3003/api/solicitudes/1",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Solicitudes",
+					"request": {
+						"url": "http://localhost:3003/api/solicitudes/",
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Solicitud con Candidato",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/solicitudes/1?filter={\"include\": \"candidato\"}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"solicitudes",
+								"1"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": \"candidato\"}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Solicitud con Candidato con Contactos",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/solicitudes/1?filter={\"include\": {\"candidato\": \"contactos\"}}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"solicitudes",
+								"1"
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{\"include\": {\"candidato\": \"contactos\"}}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Solicitudes con Candidato con Contactos con campos necesarios",
+					"request": {
+						"url": {
+							"raw": "http://localhost:3003/api/solicitudes/?filter={  \n   \"include\":{  \n      \"relation\":\"candidato\",\n      \"scope\":{  \n         \"fields\":[  \n            \"id\",\n            \"nombre\",\n            \"apellido\",\n            \"perfil\",\n            \"posicion\"\n         ],\n         \"include\":{  \n            \"relation\":\"contactos\"\n         }\n      }\n   },\n   \"fields\":{  \n      \"brm\":false,\n      \"adm\":false,\n      \"consultorasContactadas\":false,\n      \"fechaCierre\":false\n   }\n}",
+							"protocol": "http",
+							"auth": {},
+							"host": [
+								"localhost"
+							],
+							"port": "3003",
+							"path": [
+								"api",
+								"solicitudes",
+								""
+							],
+							"query": [
+								{
+									"key": "filter",
+									"value": "{  \n   \"include\":{  \n      \"relation\":\"candidato\",\n      \"scope\":{  \n         \"fields\":[  \n            \"id\",\n            \"nombre\",\n            \"apellido\",\n            \"perfil\",\n            \"posicion\"\n         ],\n         \"include\":{  \n            \"relation\":\"contactos\"\n         }\n      }\n   },\n   \"fields\":{  \n      \"brm\":false,\n      \"adm\":false,\n      \"consultorasContactadas\":false,\n      \"fechaCierre\":false\n   }\n}",
+									"equals": true,
+									"description": ""
+								}
+							],
+							"variable": []
+						},
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
