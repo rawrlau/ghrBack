@@ -28,7 +28,7 @@ module.exports = function(app) {
   function contactoAleatorio(id) {
     var contacto = {
       id: id,
-      idCandidato: id,
+      candidatoId: id,
       tipo: generarTipo(),
       valor: generarContactoCondicioanal(),
     };
