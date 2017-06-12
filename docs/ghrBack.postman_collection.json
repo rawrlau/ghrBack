@@ -249,10 +249,10 @@
 					"response": []
 				},
 				{
-					"name": "Solicitud con Candidato con Contactos",
+					"name": "Solicitud con Candidato y reqObligatorios y reqDeseables",
 					"request": {
 						"url": {
-							"raw": "http://localhost:3003/api/solicitudes/1?filter={\"include\": {\"candidato\": \"contactos\"}}",
+							"raw": "http://localhost:3003/api/solicitudes/1?filter={\n  \"include\": [\n    {\"reqObligatorios\": {\n      \"requisitos\": \"caracteristica\"\n      }\n    },\n    {\"reqDeseables\": {\n      \"requisitos\": \"caracteristica\"\n      }\n    },\n      \"candidato\"\n    \n  ]\n}",
 							"protocol": "http",
 							"auth": {},
 							"host": [
@@ -267,7 +267,7 @@
 							"query": [
 								{
 									"key": "filter",
-									"value": "{\"include\": {\"candidato\": \"contactos\"}}",
+									"value": "{\n  \"include\": [\n    {\"reqObligatorios\": {\n      \"requisitos\": \"caracteristica\"\n      }\n    },\n    {\"reqDeseables\": {\n      \"requisitos\": \"caracteristica\"\n      }\n    },\n      \"candidato\"\n    \n  ]\n}",
 									"equals": true,
 									"description": ""
 								}
