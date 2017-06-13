@@ -24,11 +24,11 @@ function generadorEntidad(amount, generatorObject) {
 }
 
 // Arrays para rellenar nuestro objeto solicitud con valores aleatorios
-var nombreS = ['Adrian', 'Hector', 'Dani', 'Miguel', 'Alex', 'Rodri', 'Marta', 'Alejandro', 'Alvaro'];
+var nombreS = ['Puesto de analista', 'Puesto de programadror', 'Puesto de recursos humanos', 'Puesto de ventas', 'Puesto de diseñador', 'Jefe departamento analista', 'Jefe departamento RRHH', 'Jefe departamento programacion', 'Jefe departamento diseño'];
 var descripcion = ['Intermedio', 'Candidato', 'Usuario', 'Invitado', 'Experto', 'Aprendiz', 'Solicitud', 'Servicio Tecnico'];
-var cliente = ['BBVA', 'El Corte Ingles', 'Clientazo'];
-var brm = ['arm1', 'arm2', 'arm3', 'arm4', 'arm5', 'arm6'];
-var adm = ['adm1', 'adm2', 'adm3', 'adm4', 'adm5', 'adm6'];
+var cliente = ['BBVA', 'El Corte Ingles', 'Santander', 'Media Markt', 'Hipercor', 'Worten', 'Teleppiza'];
+var brm = ['ARM Uno', 'ARM Dos', 'ARM Tres', 'ARM Cuatro', 'ARM Cinco', 'ARM Seis'];
+var adm = ['ADM Uno', 'ADM Dos', 'ADM Tres', 'ADM Cuatro', 'ADM Cinco', 'ADM Seis'];
 var reqObligatorios = ['Conocimientos de java', 'Puntualidad', 'Responsabilidad'];
 var reqDeseables = ['Deseable1', 'Deseable2', 'Deseable3', 'Deseable4', 'Deseable5'];
 var consultorasContactadas = ['Tecnocom', 'IBM', 'Apple', 'Softtek', 'Indra'];
