@@ -9,9 +9,9 @@ module.exports = function(app) {
   }
 
   // Arrays para rellenar nuestro objeto solicitud con valores aleatorios
-  var nombre = ['Puesto de analista', 'Puesto de programadror', 'Puesto de recursos humanos', 'Puesto de ventas', 'Puesto de diseñador', 'Jefe departamento analista', 'Jefe departamento RRHH', 'Jefe departamento programacion', 'Jefe departamento diseño'];
+  var nombre = ['Puesto de analista', 'Puesto de programador', 'Puesto de recursos humanos', 'Puesto de ventas', 'Puesto de diseñador', 'Jefe departamento analista', 'Jefe departamento RRHH', 'Jefe departamento programacion', 'Jefe departamento diseño'];
   var descripcion = ['Intermedio', 'Candidato', 'Usuario', 'Invitado', 'Experto', 'Aprendiz', 'Solicitud', 'Servicio Tecnico'];
-  var cliente = ['BBVA', 'El Corte Ingles', 'Santander', 'Media Markt', 'Hipercor', 'Worten', 'Teleppiza'];
+  var cliente = ['BBVA', 'El Corte Ingles', 'Santander', 'Media Markt', 'Hipercor', 'Worten', 'Telepizza'];
   var brm = ['BRM Uno', 'BRM Dos', 'BRM Tres', 'BRM Cuatro', 'BRM Cinco', 'BRM Seis'];
   var adm = ['ADM Uno', 'ADM Dos', 'ADM Tres', 'ADM Cuatro', 'ADM Cinco', 'ADM Seis'];
   var reqObligatorios = ['Conocimientos de java', 'Puntualidad', 'Responsabilidad'];
