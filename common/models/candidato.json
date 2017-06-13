@@ -61,6 +61,11 @@
       "type": "belongsTo",
       "model": "listaDeRequisito",
       "foreignKey": ""
+    },
+    "contactos": {
+      "type": "hasMany",
+      "model": "contacto",
+      "foreignKey": ""
     }
   },
   "acls": [],

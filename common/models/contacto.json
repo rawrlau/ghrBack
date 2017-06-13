@@ -12,10 +12,6 @@
       "required": true,
       "default": 0
     },
-    "idCandidato": {
-      "type": "number",
-      "required": true
-    },
     "tipo": {
       "type": "string",
       "required": true
@@ -26,7 +22,13 @@
     }
   },
   "validations": [],
-  "relations": {},
+  "relations": {
+    "candidato": {
+      "type": "belongsTo",
+      "model": "candidato",
+      "foreignKey": ""
+    }
+  },
   "acls": [],
   "methods": {}
 }
