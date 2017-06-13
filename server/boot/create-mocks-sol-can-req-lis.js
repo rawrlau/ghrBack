@@ -24,6 +24,7 @@ function generadorEntidad(amount, generatorObject) {
 }
 
 // Arrays para rellenar nuestro objeto solicitud con valores aleatorios
+
 var nombreS = ['Puesto de analista', 'Puesto de programadror', 'Puesto de recursos humanos', 'Puesto de ventas', 'Puesto de diseñador', 'Jefe departamento analista', 'Jefe departamento RRHH', 'Jefe departamento programacion', 'Jefe departamento diseño'];
 var descripcion = ['Intermedio', 'Candidato', 'Usuario', 'Invitado', 'Experto', 'Aprendiz', 'Solicitud', 'Servicio Tecnico'];
 var cliente = ['BBVA', 'El Corte Ingles', 'Santander', 'Media Markt', 'Hipercor', 'Worten', 'Teleppiza'];
@@ -32,23 +33,28 @@ var adm = ['ADM Uno', 'ADM Dos', 'ADM Tres', 'ADM Cuatro', 'ADM Cinco', 'ADM Sei
 var reqObligatorios = ['Conocimientos de java', 'Puntualidad', 'Responsabilidad'];
 var reqDeseables = ['Deseable1', 'Deseable2', 'Deseable3', 'Deseable4', 'Deseable5'];
 var consultorasContactadas = ['Tecnocom', 'IBM', 'Apple', 'Softtek', 'Indra'];
+
 var estadoS = ['abierta', 'cerradaCliente', 'cerradaIncorporacion', 'standby'];
 
 // Arrays
 var nombreC = ['Hector', 'Adrián', 'Dani', 'Miguel', 'Alex', 'Rodrigo', 'Marta', 'Alejandro', 'Alvaro', 'Luis'];
+
 var apellido = ['Martín', 'Alonso', 'Tizón', 'Espinoza', 'Monzón', 'Mínguez', 'Moreno', 'Ortiz', 'Fernández'];
 var perfil = ['Analista', 'Programador', 'Diseñador'];
 var provincia = ['Madrid', 'Cáceres', 'Barcelona', 'Valencia', 'Badajoz', 'Sevilla', 'Galicia', 'Zaragoza', 'Cuenca'];
 var posicion = ['Programador junior', 'Progrmador', 'Progrmador senior', 'Analista junior', 'Analista', 'Analista senior', 'Diseñador junior', 'Diseñador', 'Diseñador senior'];
 var experiencia = ['días', 'meses', 'años'];
-var disp_viajar = ['Si', 'No'];
-var disp_residencia = ['Si', 'No'];
+var disp_viajar = ['S', 'N'];
+var disp_residencia = ['S', 'N'];
+
 var disp_incorporacion = ['Ahora no', 'Inmediata', 'A medio plazo'];
 var expect_contractual = ['Jefe', 'CEO', 'Administrativo', 'Programador', 'Diseñador', 'Becario'];
 var feedback_sourcing = ['HB', 'FS', 'GR', 'TD'];
 var feedback_tecnico = ['DI', 'TI', 'PO', 'LA'];
+
 var tec_seleccion = ['Alejandro Martin', 'Miguel Angel Perez', 'Rodrigo Sanchez', 'Daniel Martinez', 'Pablo Garcia'];
 var referenciado = ['Juan Sanz', 'Roberto Rodriguez', 'Eduardo Lopez', 'Alvaro Gonzalez'];
+
 var estadoC = ['En proceso', 'Descartado', 'Incorporación'];
 
 module.exports = function(app) {
