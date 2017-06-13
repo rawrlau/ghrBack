@@ -9,14 +9,14 @@ module.exports = function(app) {
   }
 
   // Arrays para rellenar nuestro objeto solicitud con valores aleatorios
-  var nombre = ['Adrian', 'Hector', 'Dani', 'Miguel', 'Alex', 'Rodri', 'Marta', 'Alejandro', 'Alvaro'];
-  var descripcion = ['descripcion1', 'descripcion2', 'descripcion3', 'descripcion4', 'descripcion5', 'descripcion6', 'descripcion7', 'descripcion8', 'descripcion9'];
-  var cliente = ['BBVA', 'El Corte Ingles', 'Clientazo'];
+  var nombre = ['Puesto de analista', 'Puesto de programadror', 'Puesto de recursos humanos', 'Puesto de ventas', 'Puesto de diseñador', 'Jefe departamento analista', 'Jefe departamento RRHH', 'Jefe departamento programacion', 'Jefe departamento diseño'];
+  var descripcion = ['Intermedio', 'Candidato', 'Usuario', 'Invitado', 'Experto', 'Aprendiz', 'Solicitud', 'Servicio Tecnico'];
+  var cliente = ['BBVA', 'El Corte Ingles', 'Santander', 'Media Markt'];
   var brm = ['arm1', 'arm2', 'arm3', 'arm4', 'arm5', 'arm6'];
   var adm = ['adm1', 'adm2', 'adm3', 'adm4', 'adm5', 'adm6'];
   var reqObligatorios = ['Conocimientos de java', 'Puntualidad', 'Responsabilidad'];
   var reqDeseables = ['Deseable1', 'Deseable2', 'Deseable3', 'Deseable4', 'Deseable5'];
-  var consultorasContactadas = ['Consultora1', 'Consultora2', 'Consultora3', 'Consultora4', 'Consultora5'];
+  var consultorasContactadas = ['Tecnocom', 'IBM', 'Apple', 'Softtek', 'Indra'];
   var estado = ['abierta', 'cerradaCliente', 'cerradaIncorporacion', 'standby'];
 
   // Funcion que crea un objeto solicitud y lo rellena con un valor aleatorio
